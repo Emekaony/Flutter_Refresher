@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,16 +26,7 @@ class MyApp extends StatelessWidget {
             fontSize: 20,
           ),
         ),
-        body: Center(child: Text("Hello World")),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            log("Pressed add floating action button");
-          },
-          child: Text(
-            "+",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
-          ),
-        ),
+        body: Text("Hello world"),
       ),
     );
   }
