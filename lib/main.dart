@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// import "package:simple_app/components/simple_box.dart";
+
 void main() {
   runApp(const MyApp());
 }
@@ -26,7 +28,23 @@ class MyApp extends StatelessWidget {
             fontSize: 20,
           ),
         ),
-        body: Text("Hello world"),
+        body: Container(
+          width: double.infinity,
+          height: 600,
+          decoration: BoxDecoration(color: Colors.black),
+          child: Row(
+            children: [
+              Flexible(
+                flex: 3,
+                fit: FlexFit.tight,
+                child: Container(color: Colors.red, child: Text("Red")),
+              ),
+              Flexible(
+                child: Container(color: Colors.green, child: Text("green")),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
