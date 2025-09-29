@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:simple_app/pages/cupertino_page.dart';
 
 // import "package:simple_app/components/simple_box.dart";
 
 void main() {
-  runApp(const MyApp());
+  runApp(const CupertinoPage());
 }
 
 class MyApp extends StatelessWidget {
